@@ -10,4 +10,11 @@ public class User {
     public String getPrenom() {
         return prenom;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "prenom='" + prenom + '\'' +
+                '}';
+    }
 }

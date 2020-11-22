@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/t1"
+        android:id="@+id/t11"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_weight="1"
@@ -23,7 +23,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/e1"
+            android:id="@+id/e11"
             android:hint="Entrer un nombre de question de départ" />
 
 
@@ -33,17 +33,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
     <Button
-        android:id="@+id/b1"
+        android:id="@+id/b11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="Suivant" />
 
     <Button
-        android:id="@+id/b2"
+        android:id="@+id/b12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Sortir" />
+        android:text="Cancel" />
 </LinearLayout>
 </LinearLayout>

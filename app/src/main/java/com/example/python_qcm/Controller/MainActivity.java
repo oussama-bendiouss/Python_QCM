@@ -13,19 +13,19 @@ import com.example.python_qcm.R;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class MainActivity extends AppCompatActivity {
-       TextInputEditText E1;
-       Button B1;
-       Button B2;
+       TextInputEditText E11;
+       Button B11;
+       Button B12;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        B1 = findViewById(R.id.b1);
-        B2= findViewById(R.id.b2);
-        E1 = findViewById(R.id.e1);
-        B1.setEnabled(false);
-        B2.setEnabled(false);
-         E1.addTextChangedListener(new TextWatcher() {
+        B11 = findViewById(R.id.b11);
+        B12= findViewById(R.id.b12);
+        E11 = findViewById(R.id.e11);
+        B11.setEnabled(false);
+        B12.setEnabled(false);
+         E11.addTextChangedListener(new TextWatcher() {
              @Override
              public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
              @Override
              public void onTextChanged(CharSequence s, int start, int before, int count) {
-                 B1.setEnabled(s.toString().length()!=0);
-                 B2.setEnabled(s.toString().length()!=0);
+                 B11.setEnabled(s.toString().length()!=0);
+                 B12.setEnabled(s.toString().length()!=0);
 
              }
 
@@ -43,14 +43,14 @@ public class MainActivity extends AppCompatActivity {
 
              }
          });
-         B1.setOnClickListener(new View.OnClickListener() {
+         B11.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                 Intent question_intent= new Intent(MainActivity.this, MainActivity2.class);
+                 Intent question_intent= new Intent(MainActivity.this, mainactivity3.class);
                  startActivity(question_intent);
              }
          });
-         B2.setOnClickListener(new View.OnClickListener() {
+         B12.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
                  finish();
