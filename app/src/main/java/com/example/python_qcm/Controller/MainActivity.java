@@ -9,22 +9,28 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.python_qcm.Model.Question;
+import com.example.python_qcm.Model.User;
+import com.example.python_qcm.Model.questionbank;
 import com.example.python_qcm.R;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class MainActivity extends AppCompatActivity {
-       TextInputEditText E11;
-       Button B11;
-       Button B12;
+       private TextInputEditText E11;
+       private Button B11;
+       private Button B12;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         B11 = findViewById(R.id.b11);
         B12= findViewById(R.id.b12);
         E11 = findViewById(R.id.e11);
         B11.setEnabled(false);
         B12.setEnabled(false);
+
          E11.addTextChangedListener(new TextWatcher() {
              @Override
              public void beforeTextChanged(CharSequence s, int start, int count, int after) {
