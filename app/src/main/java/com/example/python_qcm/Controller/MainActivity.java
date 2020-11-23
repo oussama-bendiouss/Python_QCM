@@ -54,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
              public void onClick(View v) {
                  Intent question_intent= new Intent(MainActivity.this, mainactivity3.class);
                  startActivity(question_intent);
+                 Intent nbquestion = new Intent(MainActivity.this,MainActivity2.class);
+                 int value = (int) Integer.parseInt(E11.getText().toString());
+                 nbquestion.putExtra("nbquestion",value);
              }
          });
          B12.setOnClickListener(new View.OnClickListener() {

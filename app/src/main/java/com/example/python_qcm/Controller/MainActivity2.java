@@ -2,6 +2,7 @@ package com.example.python_qcm.Controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,44 +24,60 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
        private Button B24;
        private questionbank bquestion;
        private Question questionrecent ;
+       private int nbq;
+       private int score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        bquestion= this.genequestion();
+        bquestion= MainActivity2.this.genequestion();
         B21=findViewById(R.id.b21);
         B22=findViewById(R.id.b22);
         B23=findViewById(R.id.b23);
         B24= findViewById(R.id.b24);
         E21 = findViewById(R.id.t21);
+        score=0;
+
+        nbq =5;
+
         B21.getTag(0);
         B22.getTag(1);
         B23.getTag(2);
-        B24.getTag(4);
-        questionrecent = bquestion.getquestion();
-        //this.displayquestion(questionrecent);
+        B24.getTag(3);
+
         B21.setOnClickListener(MainActivity2.this);
         B22.setOnClickListener(MainActivity2.this);
         B23.setOnClickListener(MainActivity2.this);
         B24.setOnClickListener(MainActivity2.this);
-
-
+        questionrecent = bquestion.getquestion();
+        this.displayquestion(questionrecent);
     }
+
+
 
     @Override
     public void onClick(View v) {
         int reponseIndex = (int) v.getTag();
         if (reponseIndex==questionrecent.getsolu()){
             Toast.makeText(MainActivity2.this,"Bravo",Toast.LENGTH_SHORT).show();
+            score ++;
         }
         else {
             Toast.makeText(MainActivity2.this,"False",Toast.LENGTH_SHORT).show();
         }
+        if (--nbq==0){
+
+        }
+        else{
+            questionrecent=bquestion.getquestion();
+            displayquestion(questionrecent);
+        }
     }
 
-    private void displayquestion(final Question q){
+
+    private void displayquestion( Question q){
         E21.setText(q.getQuestion());
-        B22.setText(q.getchoise().get(0));
+        B21.setText(q.getchoise().get(0));
         B22.setText(q.getchoise().get(1));
         B23.setText(q.getchoise().get(2));
         B24.setText(q.getchoise().get(3));

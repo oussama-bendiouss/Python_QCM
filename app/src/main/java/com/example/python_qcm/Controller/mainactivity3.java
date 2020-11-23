@@ -54,6 +54,7 @@ public class mainactivity3 extends AppCompatActivity {
                 uti.setPrenom(finame);
                 Intent qst=new Intent(mainactivity3.this,MainActivity2.class);
                 startActivity(qst);
+                finish();
             }
         });
         B32.setOnClickListener(new View.OnClickListener() {
