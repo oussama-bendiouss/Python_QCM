@@ -12,7 +12,14 @@ public class Question {
         solu = so ;
 
     }
-
-
+public String getQuestion(){
+        return question;
+}
+public List<String> getchoise(){
+        return réponse;
+}
+public int getsolu(){
+        return solu;
+}
 
 }

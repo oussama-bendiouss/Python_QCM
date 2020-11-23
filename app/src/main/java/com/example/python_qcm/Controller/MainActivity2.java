@@ -3,8 +3,10 @@ package com.example.python_qcm.Controller;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.python_qcm.Model.Question;
 import com.example.python_qcm.Model.questionbank;
@@ -13,7 +15,7 @@ import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.Arrays;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity implements View.OnClickListener {
        private   TextView E21;
        private  Button B21;
        private  Button B22;
@@ -25,7 +27,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        //bquestion= this.genequestion();
+        bquestion= this.genequestion();
         B21=findViewById(R.id.b21);
         B22=findViewById(R.id.b22);
         B23=findViewById(R.id.b23);
@@ -37,8 +39,31 @@ public class MainActivity2 extends AppCompatActivity {
         B24.getTag(4);
         questionrecent = bquestion.getquestion();
         //this.displayquestion(questionrecent);
+        B21.setOnClickListener(MainActivity2.this);
+        B22.setOnClickListener(MainActivity2.this);
+        B23.setOnClickListener(MainActivity2.this);
+        B24.setOnClickListener(MainActivity2.this);
 
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        int reponseIndex = (int) v.getTag();
+        if (reponseIndex==questionrecent.getsolu()){
+            Toast.makeText(MainActivity2.this,"Bravo",Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Toast.makeText(MainActivity2.this,"False",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void displayquestion(final Question q){
+        E21.setText(q.getQuestion());
+        B22.setText(q.getchoise().get(0));
+        B22.setText(q.getchoise().get(1));
+        B23.setText(q.getchoise().get(2));
+        B24.setText(q.getchoise().get(3));
     }
     private questionbank genequestion(){
         Question q1= new Question("Laquelle des fonctions suivantes convertit un « string » en « float » en python?", Arrays.asList("str(x)","float(x)","long(x [,base] )","int(x [,base])"),1);
