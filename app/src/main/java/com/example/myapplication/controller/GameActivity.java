@@ -115,7 +115,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     displayQuestion(mCurrentQuestion);
                 }
             }
-        }, 2000); // LENGTH_SHORT is usually 2 second long
+        }, 500); // LENGTH_SHORT is usually 2 second long
     }
 
     @Override
