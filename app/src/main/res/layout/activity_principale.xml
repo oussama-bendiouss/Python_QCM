@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yellow"
+    android:layout_height="match_parent"
+    tools:context=".Principale">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue sur notre super app , où vous pouvez pratiquer tous ce que vous avez appris ,et apprendre d'autre chose "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="62dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/bp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Python QCM" />
+
+        <Button
+            android:id="@+id/bp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Learn Python " />
+
+        <Button
+            android:id="@+id/bp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Who are we ?" />
+        <Button
+            android:id="@+id/bp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Contact US " />
+        <Button
+            android:id="@+id/bp5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="End" />
+    </LinearLayout>
+
+
+</LinearLayout>

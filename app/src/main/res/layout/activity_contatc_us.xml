@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:orientation="vertical"
+    tools:context=".ContatUs">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Bonjour , pour n'importe quel erreur rencontré où des remarques sur le contenu ,la forme , les réponses au quetions où d'autre veuillez nous catacter sur cette email: "
+        android:textSize="19dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+       android:layout_centerVertical="true"
+
+        android:layout_marginTop="263dp"
+
+        android:text="assadben2023@gmail.com"
+        android:textSize="15dp" />
+
+
+    <Button
+        android:id="@+id/bretourcontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+
+        android:text="Back" />
+</RelativeLayout>

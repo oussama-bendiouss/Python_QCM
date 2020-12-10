@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/yellow"
+    android:layout_height="match_parent"
+
+    tools:context=".Quisommenous">
+    <TextView
+        android:id="@+id/textViewn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Qui somme nous ?"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteX="86dp"
+
+        tools:layout_editor_absoluteY="56dp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_below="@id/textViewn1"
+        app:srcCompat="@drawable/capture_d_cran_2020_11_30_130620" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Je suis Oussama Bendiouss ,20 ans ,étudiant à Centrale Supelec , en premiére année cycle ingénieur (cycle normale) , j'ai passé par une prépa TSI au Maroc (Lycée d'exellence de Benguerir .Je fait pour l'instant une formation sur le domaine de CyberSécurité"
+        tools:layout_editor_absoluteX="86dp"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_below="@id/textViewn1"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <Button
+        android:id="@+id/bretourpre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:text="Back" />
+
+
+</RelativeLayout>

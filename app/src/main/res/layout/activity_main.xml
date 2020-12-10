@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yellow"
+    tools:context="com.example.myapplication.controller.MainActivity">
+
+    <TextView
+        android:id="@+id/activity_main_greeting_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Welcome! What's your name?"/>
+
+    <EditText
+        android:id="@+id/activity_main_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Please type your name"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/activity_main_play_btn"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:padding="30dp"
+            android:text="Let's play" />
+
+        <Button
+            android:id="@+id/activity_main_play_btn_back"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:padding="30dp"
+            android:text="Back" />
+    </LinearLayout>
+
+</LinearLayout>
