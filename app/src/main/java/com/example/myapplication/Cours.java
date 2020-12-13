@@ -2,8 +2,12 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+
+import com.example.myapplication.cours.Liste;
 
 public class Cours extends AppCompatActivity {
     public final static String MESSAGE_KEY = "ganeshannt.senddata.message_key";
@@ -51,5 +55,14 @@ public class Cours extends AppCompatActivity {
         L17 = findViewById(R.id.bc17);
         L18 = findViewById(R.id.bc18);
         L19 = findViewById(R.id.bc19);
+        L1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent liste = new Intent();
+                liste.setClass(Cours.this, Liste.class);
+                startActivity(liste);
+
+            }
+        });
     }
 }

@@ -1,9 +1,364 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cours.Liste">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:orientation="vertical"
+    tools:context=".cours.Liste"
+    >
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fillViewport="false"
+        >
+
+      <HorizontalScrollView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:fillViewport="true">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <TextView
+        android:id="@+id/te1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liste"
+        android:textSize="25dp"
+        android:fontFamily="serif"
+
+         />
+    <TextView
+        android:id="@+id/def"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+
+        android:text="Une liste est une sorte de tableau qui permet de mémoriser un ensemble d’éléments de types variés.
+C’est une sorte de t-uple modifiable. La table 2 regroupe les opérations qu’une liste supporte et la
+table 3 les méthodes dont elle dispose."
+        />
+
+
+
+    <TableLayout
+        android:id="@+id/tab1"
+        android:layout_below="@+id/def"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+       >
+        <TableRow >
+            <TextView
+                android:text="x = [4,5]"
+                android:layout_width="wrap_content"
+
+                />
+            <TextView
+                android:text="création d’une liste composée de deux entiers"
+
+                android:layout_width="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow  >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="x = ['un',1,'deux',2]"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="création d’une liste composée deux chaînes de \n caractères  et de deux entiers, l’ordre d’écriture \n est important" />
+        </TableRow>
+
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="x = [3,]"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="création d’une liste d’un élément, sans la virgule, /n le résultat reste une liste"
+                />
+        </TableRow>
+
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=" x = [ ]"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="crée une liste vide"
+                />
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="x = list ()"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="crée une liste vide"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:text="En plus :"/>
+
+
+
+
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="1"
+
+        >
+        <TableRow >
+            <TextView
+                android:text="x in s "
+                android:layout_width="wrap_content"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:text=" vrai si x est un des éléments de l" />
+        </TableRow>
+
+        <TableRow  >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="x not in s"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="réciproque de la ligne précédente" />
+        </TableRow>
+
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="l + t"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="concaténation de l et t"
+                />
+        </TableRow>
+
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=" l ∗ n"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=" concatène n copies de l les unes à la suite des autres"
+                />
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="l[i]"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:text="retourne le ième élément de l, à la différence des T-uples, l’instruction l[i] = ”3” est valide, elle remplace l’élément \ni par 3.
+"
+                />
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="l[i : j] "
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="retourne une liste contenant les éléments de l d’indices i \nà j exclu .Il est possible de remplacer cette sous-liste \npar une autre en utilisant l’affectation l[i : j] = l2 où l2 est \nune autre liste (ou un T-uple) de dimension différente ou \négale."
+                />
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=" l[i : j : k]"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="retourne une liste contenant les éléments de l  dont les \nindices sont compris entre i et j exclu, ces indices sont \nespacés de k : i, i+k, i+2k, i+3k, ...
+Ici encore, il est \npossible d’écrire l’affectation suivante : l[i : j : k] = l2
+mais \nl2 doit être une liste (ou un T-uple) de même dimension \nque l[i : j : k]."
+                />
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=" len(l)"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="nombre d’éléments de l"
+                />
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="min(l)"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="plus petit élément de l, résultat difficile à prévoir lorsque \nles types des éléments sont différents"
+                />
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="max(l)"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="plus grand élément de l, résultat difficile à prévoir \nlorsque les types des éléments sont différents"
+                />
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="sum(l)"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="retourne la somme de tous les éléments  "
+                />
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="del l[i : j]"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="supprime les éléments d’indices entre i et j exclu. Cette instruction est
+    équivalente à l[i : j] = []."
+                />
+        </TableRow>
+        <TableRow >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="list(x)"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="convertit x en une liste quand cela est possible
+"
+            />
+    </TableRow>
+
+    </TableLayout>
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="4dp"
+     android:layout_marginBottom="4dp"
+     android:id="@+id/enpl"
+     android:text="Table 2 : Opérations disponibles sur les listes, identiques à celles des T-uples, on suppose que l et t sont des listes, i et j sont des entiers. x est quant à lui quelconque.Les listes peuvent aussi être définies à partir d’une écriture abrégée :"
+      />
+
+        <TableLayout
+            android:id="@+id/enplus"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TableRow >
+                <TextView
+                    android:text="x = range(0,5)"
+                    android:layout_width="wrap_content"
+
+                    />
+                <TextView
+                    android:text="liste des entiers de 0 à 5 exclu \nVersion 3.x : range retourne un itérateur, il faut écrire \nx = list(range(0,5))
+"
+
+                    android:layout_width="wrap_content"
+                    />
+            </TableRow>
+
+            <TableRow  >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="y = [ i for i in x if i % 2 == 0] "
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" sélection des éléments pairs" />
+            </TableRow>
+
+            <TableRow >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="print (y)"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="affiche [0,2,4]"
+                    />
+            </TableRow>
+
+            <TableRow >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" z = [ i+j for i in x for j in x]"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="construit tous les nombres i+j possibles
+"
+                    />
+            </TableRow>
+            <TableRow >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="print (z)"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="affiche [0, 1, 2, 3, 4, 1, 2, 3, 4, 5, 2, 3,
+4, 5, 6, 3, 4, 5, 6, 7, 4, 5, 6, 7, 8]"
+                    />
+            </TableRow>
+        </TableLayout>
+          </LinearLayout>
+      </HorizontalScrollView>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
