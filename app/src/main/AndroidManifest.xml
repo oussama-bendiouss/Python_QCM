@@ -9,28 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cours.RegledOr"></activity>
-        <activity android:name=".cours.None" />
-        <activity android:name=".cours.Recursion" />
-        <activity android:name=".cours.Test" />
-        <activity android:name=".cours.Documentation" />
-        <activity android:name=".cours.POO" />
-        <activity android:name=".cours.FonctionLambda" />
-        <activity android:name=".cours.Package" />
-        <activity android:name=".cours.StructureConditionel" />
-        <activity android:name=".cours.BoucleWhile" />
-        <activity android:name=".cours.Matplotlib" />
-        <activity android:name=".cours.Bouclefor" />
-        <activity android:name=".cours.Math" />
-        <activity android:name=".cours.Numpy" />
-        <activity android:name=".cours.Dictionnaire" />
-        <activity android:name=".cours.Tuple" />
-        <activity android:name=".cours.String" />
-        <activity android:name=".cours.Liste" />
-        <activity android:name=".Cours" />
-        <activity android:name=".ContatUs" />
-        <activity android:name=".Quisommenous" />
-        <activity android:name=".Principale">
+        <activity android:name=".cours.RegledOr" android:label="Règele d'or de python"></activity>
+        <activity android:name=".cours.None" android:label="None" />
+        <activity android:name=".cours.Recursion" android:label="Recursion" />
+        <activity android:name=".cours.Test" android:label="Les Test" />
+        <activity android:name=".cours.Documentation" android:label="La documentation"/>
+        <activity android:name=".cours.POO" android:label="POO"/>
+        <activity android:name=".cours.FonctionLambda" android:label="Lambda Function"/>
+        <activity android:name=".cours.Package" android:label="Package" />
+        <activity android:name=".cours.StructureConditionel" android:label="Structure Conditionel"/>
+        <activity android:name=".cours.BoucleWhile" android:label="Boucle While"/>
+        <activity android:name=".cours.Matplotlib" android:label="Matplotlib"/>
+        <activity android:name=".cours.Bouclefor" android:label="Boucle For"/>
+        <activity android:name=".cours.Math" android:label="Math"/>
+        <activity android:name=".cours.Numpy" android:label="Numpy"/>
+        <activity android:name=".cours.Dictionnaire" android:label="Les Dictionnaire"/>
+        <activity android:name=".cours.Tuple" android:label="Tuple"/>
+        <activity android:name=".cours.String" android:label="String"/>
+        <activity android:name=".cours.Liste" android:label="Les Listes"/>
+        <activity android:name=".Cours" android:label="Les cours "/>
+        <activity android:name=".ContatUs" android:label="Nous contacté"/>
+        <activity android:name=".Quisommenous" android:label="Qui somme nous?"/>
+        <activity android:name=".Principale" android:label="Bienvenue">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
