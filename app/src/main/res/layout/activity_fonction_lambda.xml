@@ -32,6 +32,9 @@
         android:id="@+id/lambda3"
         android:textSize="15sp"
         android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/dic4"
+        style="@style/paragraphe"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"

@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+<LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="4dp"
     tools:context=".cours.Recursion">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textStyle="bold"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:id="@+id/rec"/>
+
+<ImageView
+    android:layout_marginTop="8dp"
+    android:layout_width="400dp"
+    android:layout_height="400dp"
+    android:src="@drawable/rec"/>
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textStyle="bold|italic"
+     android:textSize="18sp"
+     android:text="J'ai oublié de dire que parfois, il est vraiment difficile de comprendre ce que fait l'algorithme récursif. "/>
+</LinearLayout>
+</ScrollView>

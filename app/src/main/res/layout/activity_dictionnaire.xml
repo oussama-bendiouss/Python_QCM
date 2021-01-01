@@ -1,32 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="5dp"
     tools:context=".cours.Dictionnaire">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:textStyle="italic"
-        android:textColor="@color/violet"
-        android:textSize="20dp"
-        android:layout_marginBottom="5dp"
 
-        android:text="Dictionnaire"/>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fillViewport="false"
-        android:layout_marginLeft="3dp">
+
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/dictio"/>
+            style="@style/paragraphe"
 
-    </ScrollView>
+            android:id="@+id/dictio"/>
+<TextView
+
+    android:id="@+id/ex1"
+   style="@style/exempel"/>
+    <TextView
+        style="@style/paragraphe"
+        android:id="@+id/dic2"/>
+
+    <TextView
+       android:id="@+id/newdic"
+        style="@style/exempel"/>
+    <TextView
+        style="@style/paragraphe"
+        android:text="Pour parcourir un dictionnaire en utilise items().Voici un exemple : Et comme résultat, on trouve :"/>
+    <TextView
+        android:id="@+id/dic4"
+        style="@style/exempel"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/dic"/>
+
+
+
 
 </LinearLayout>
+</ScrollView>
