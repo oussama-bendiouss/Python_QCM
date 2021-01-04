@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_marginLeft="3dp"
     tools:context=".cours.Package">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pack"
         android:textStyle="bold"
-        android:layout_marginLeft="3dp"
+
         android:textSize="18sp"/>
     <ImageView
         android:layout_width="match_parent"

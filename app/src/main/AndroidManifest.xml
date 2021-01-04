@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="QCM"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".cours.RegledOr" android:label="Règele d'or de python"></activity>
@@ -30,7 +30,7 @@
         <activity android:name=".Cours" android:label="Les cours "/>
         <activity android:name=".ContatUs" android:label="Nous contacté"/>
         <activity android:name=".Quisommenous" android:label="Qui somme nous?"/>
-        <activity android:name=".Principale" android:label="Bienvenue">
+        <activity android:name=".Principale" android:label="Python">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:layout_marginLeft="3dp"
     tools:context=".cours.POO">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:text="Programmation orienté objet "
+            style="@style/titre"/>
+        <TextView
+            android:id="@+id/poo1"
+            style="@style/paragraphe"/>
+        <TextView
+            android:text="Structure de programme"
+            style="@style/titre"/>
+        <TextView
+            android:id="@+id/poo2"
+            style="@style/paragraphe"/>
+        <TextView
+            android:text="class Position:
+    \ndef __init__(self, longitude, latitude):
+        \n\t\t\tself.latitude = latitude
+        \n\t\t\tself.longitude = longitude\n\n\n
+def longitude(self):\n
+        \t\t\t# Longitude in radians\n
+        \t\t\tpass\n
+        "
+            style="@style/exempel"/>
+        <TextView
+            android:id="@+id/poo3"
+            style="@style/paragraphe"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pooherite"/>
+        <TextView
+            android:id="@+id/poo4"
+            style="@style/paragraphe"/>
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
