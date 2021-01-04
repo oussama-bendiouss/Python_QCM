@@ -1,9 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:layout_marginLeft="3dp"
     tools:context=".cours.Numpy">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        style="@style/paragraphe"
+        android:id="@+id/num"/>
+        <TextView
+            android:id="@+id/val"
+            style="@style/titre"
+            android:text="Variables prédéfinies "/>
+        <TextView
+            android:text="NumPy définit par défaut des valeurs constantes , par exemple  la valeur de pi"
+            style="@style/paragraphe"/>
+        <TextView
+            android:id="@+id/pi"
+            style="@style/exempel"/>
+    <TextView
+        android:text="Tableaux - numpy.array()"
+        style="@style/titre"/>
+    <TextView
+        android:id="@+id/tableau"
+        style="@style/paragraphe"/>
+    <TextView
+        android:text="La fonction numpy.arange()"
+        style="@style/titre"/>
+      <TextView
+          android:id="@+id/arrange"
+          style="@style/paragraphe"/>
+        <TextView
+            android:text="np.arange(0, 11*np.pi, np.pi)\n\n
+array([  0.        ,   3.14159265,   6.28318531,   9.42477796,
+        12.56637061,  15.70796327,  18.84955592,  21.99114858,
+        25.13274123,  28.27433388,  31.41592654])"
+            style="@style/exempel"/>
+        <TextView
+            android:text="La fonction numpy.linspace()"
+            style="@style/titre"/>
+        <TextView
+            android:id="@+id/linspace"
+            style="@style/paragraphe"/>
+        <TextView
+            android:text="np.linspace(3, 9, 10)\n\n
+array([ 3.,3.66666667,4.33333333,5.,5.66666667,
+        6.33333333,7.,7.66666667,8.33333333,9.])"
+            style="@style/exempel"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/numpy"/>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:text="Dernière remarque,NumPy dispose d’un grand nombre de fonctions mathématiques qui peuvent être appliquées directement à un tableau. Dans ce cas, la fonction est appliquée à chacun des éléments du tableau."
+            style="@style/paragraphe"/>
+    </LinearLayout>
+</ScrollView>
