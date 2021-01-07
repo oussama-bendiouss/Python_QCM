@@ -30,7 +30,7 @@ public class Principale extends AppCompatActivity {
                 Intent i1=new Intent();
                 i1.setClass(Principale.this, MainActivity.class);
                 startActivity(i1);
-                finish();
+
             }
         });
         Bp2.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +48,7 @@ public class Principale extends AppCompatActivity {
              Intent i2=new Intent();
              i2.setClass(Principale.this,Quisommenous.class);
              startActivity(i2);
-             finish();
+
 
          }
      });
@@ -58,7 +58,7 @@ public class Principale extends AppCompatActivity {
              Intent moi= new Intent();
              moi.setClass(Principale.this,ContatUs.class);
              startActivity(moi);
-             finish();
+
 
          }
      });
