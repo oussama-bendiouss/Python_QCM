@@ -24,13 +24,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:layout_below="@id/textViewn1"
-        app:srcCompat="@drawable/capture_d_cran_2020_11_30_130620" />
+        android:src="@drawable/ic_launcher_foreground" />
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Je suis Oussama Bendiouss ,20 ans ,étudiant à Centrale Supelec , en premiére année cycle ingénieur (cycle normale) , j'ai passé par une prépa TSI au Maroc (Lycée d'exellence de Benguerir .Je fait pour l'instant une formation sur le domaine de CyberSécurité"
+        android:text="Je suis Oussama  ,20 ans ,étudiant à Centrale Supelec , en premiére année cycle ingénieur (cycle normale) , j'ai passé par une prépa TSI au Maroc (Lycée d'exellence de Benguerir .Je fait pour l'instant une formation sur le domaine de CyberSécurité"
         tools:layout_editor_absoluteX="86dp"
         android:layout_toRightOf="@id/imageView"
         android:layout_below="@id/textViewn1"
